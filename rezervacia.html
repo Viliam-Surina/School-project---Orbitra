@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pošlite nezáväzný záujem o cestu do vesmíru s Orbitrou.">
+  <title>Nezáväzný záujem — Orbitra</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Orbitra – úvodná stránka"><span class="brand-mark">✦</span> ORBITRA</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav" class="main-nav" aria-label="Hlavná navigácia"><a href="index.html">Domov</a><a class="active" href="rezervacia.html">Nezáväzný záujem</a></nav>
+  </header>
+  <main>
+    <section class="form-hero"><div class="form-intro"><p class="eyebrow">Prvý krok k veľkej ceste</p><h1>Vesmír vám<br><span>odpovie.</span></h1><p>Vyplňte formulár a náš tím vám pošle viac informácií o vybranej výprave. Zatiaľ ide len o nezáväzný záujem.</p><div class="contact-card"><span class="contact-icon">✦</span><div><strong>Každá cesta sa začína otázkou.</strong><p>Napíšte nám, kam vás to ťahá.</p></div></div></div>
+      <div class="form-panel"><div class="form-panel-head"><div><p class="eyebrow">Orbitra / 02</p><h2>Nezáväzný záujem</h2></div><span class="form-step">1 — 2</span></div>
+        <form id="interest-form" novalidate>
+          <div class="field-row"><div class="field"><label for="name">Meno a priezvisko <span>*</span></label><input id="name" name="name" autocomplete="name" required minlength="2" placeholder="Jana Nováková"><small class="field-error" id="name-error"></small></div>
+          <div class="field"><label for="email">E-mail <span>*</span></label><input id="email" name="email" type="email" autocomplete="email" required placeholder="jana@email.sk"><small class="field-error" id="email-error"></small></div></div>
+          <div class="field"><label for="trip">Ktorá cesta vás zaujíma? <span>*</span></label><select id="trip" name="trip" required><option value="">Vyberte si výpravu</option><option>Víkend na Mesiaci</option><option>Mars: nová hranica</option><option>Noc v orbitálnom hoteli</option><option>Ešte sa rozhodujem</option></select><small class="field-error" id="trip-error"></small></div>
+          <div class="field"><label for="date">Kedy by ste chceli vyraziť?</label><select id="date" name="date"><option value="">Zatiaľ neviem</option><option>Do 2 rokov</option><option>O 2 až 5 rokov</option><option>Keď bude vesmírna dovolenka dostupná</option></select></div>
+          <div class="field"><label for="message">Čo by ste chceli vedieť? <span class="optional">Nepovinné</span></label><textarea id="message" name="message" rows="3" placeholder="Napíšte nám svoju otázku..."></textarea></div>
+          <label class="checkbox-field"><input id="consent" name="consent" type="checkbox" required><span>Súhlasím so spracovaním údajov na účely odpovede na môj dopyt. <span>*</span></span></label><small class="field-error" id="consent-error"></small>
+          <button class="button button-primary submit-button" type="submit">Odoslať záujem <span aria-hidden="true">↗</span></button>
+          <p class="form-footnote">Polia označené * sú povinné. Ide o ukážkový formulár školského projektu — údaje sa nikam neodosielajú.</p>
+          <div class="success-message" id="success-message" role="status" aria-live="polite" hidden></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">✦</span> ORBITRA</a><p>Fiktívna cestovná kancelária · Školský projekt</p><p>© <span data-year></span> Orbitra</p></footer>
+</body>
+</html>
